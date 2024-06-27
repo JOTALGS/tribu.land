@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/tribu.land/static/css/main.e6c13ad2.css",
+    "main.js": "/tribu.land/static/js/main.11541aae.js",
+    "static/media/Ni.png": "/tribu.land/static/media/Ni.5670d563deb1ad1a7c8e.png",
+    "static/media/Ov.png": "/tribu.land/static/media/Ov.5b700c38b7aa0932fb42.png",
+    "static/media/Na.png": "/tribu.land/static/media/Na.4d68dc0e008f9946fadd.png",
+    "static/media/SourceSansPro-Regular.ttf": "/tribu.land/static/media/SourceSansPro-Regular.df87f53caf449a3b7572.ttf",
+    "static/media/SourceSansPro-Light.ttf": "/tribu.land/static/media/SourceSansPro-Light.9bbfd7cb5e722de4b9f4.ttf",
+    "static/media/JP.png": "/tribu.land/static/media/JP.91469d54d2dba587ddab.png",
+    "index.html": "/tribu.land/index.html",
+    "main.e6c13ad2.css.map": "/tribu.land/static/css/main.e6c13ad2.css.map",
+    "main.11541aae.js.map": "/tribu.land/static/js/main.11541aae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.11541aae.js"
+  ]
+}
