@@ -1,3 +1,4 @@
+'use client'
 import gsap from "gsap";
 import React from "react";
 import { useLayoutEffect } from "react";
@@ -19,7 +20,7 @@ const Section = styled.section`
 `;
 const TextContainer = styled.p`
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   z-index: 1;
 
   display: flex;
@@ -113,11 +114,11 @@ const DesignSection = () => {
   return (
     <Section ref={container}>
       <TextContainer ref={textOne}>
-        <span>Flaw-less design with strong durability.</span>
+        <span>Showcase your collaborations with the industry.</span>
       </TextContainer>
 
       <TextContainer2 ref={textTwo}>
-        <span>Flat-edge design with toughest smartphone glass.</span>
+        <span>Minimalist design for embracing user experience.</span>
       </TextContainer2>
     </Section>
   );

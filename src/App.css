@@ -36,3 +36,90 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+
+.container {
+  padding-inline: 3rem;
+  background-color: #000000; /* Equivalent to Tailwind's gray-100 */
+}
+
+.motion-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.card {
+  padding: 3rem 3.25rem;
+  margin-top: 30px;
+  display: flex;
+  margin-right: 30px;
+  align-items: flex-start;
+  flex-direction: column;
+  border-width: 0.2cap;
+  box-sizing: border-box;
+  border: 1px solid; /* Ajusta el ancho del borde según sea necesario */
+  border-image: linear-gradient(to right, #5f005f, #920092, #ff4da6) 1;
+  border-radius: 100px;
+}
+
+.image-wrapper {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.content-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* Adjust as needed for spacing */
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 300px; /* Set a fixed height for the images */
+  object-fit: cover;
+}
+
+.animation-title {
+  color: white;
+  margin-bottom: 1rem;
+  margin-top: 1.25rem;
+  font-size: 1.5rem; /* Equivalent to h4 size */
+}
+
+.animation-title-hero {
+  font-size: 0.6em; /* Adjust the font size as needed */
+  letter-spacing: -10rem; /* Adjust the letter spacing as needed */
+}
+
+.gray-50 {
+  color: #f9fafb; /* Equivalent to Tailwind's gray-50 */
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 50%; /* Two cards per row on medium screens */
+  }
+}
+
+@media (min-width: 998px) {
+  .card {
+    width: 33.33%; /* Three cards per row on large screens */
+  }
+}
+
+@media (min-width: 1198px) {
+  .card {
+    width: 22%; /* Four cards per row on extra large screens */
+  }
+}

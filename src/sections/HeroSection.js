@@ -1,6 +1,8 @@
+'use client'
 import React from "react";
 import styled from "styled-components";
 import backgroundVideo from "../assets/video/Ink - 21536.mp4";
+import AnimationTitles from "../components/functions/AnimationTitles";
 
 const Section = styled.section`
   width: 100vw;
@@ -37,6 +39,7 @@ const Title = styled.h1`
 const TextContainer = styled.div`
   width: 100%;
   height: 100vh;
+  padding: 1.5rem;
 
   display: flex;
   justify-content: space-between;
@@ -50,16 +53,14 @@ const TextContainer = styled.div`
 
   span {
     font-size: var(--fontxxxl);
-    text-transform: uppercase;
     font-weight: 600;
     padding: 2rem;
 
     @media screen and (max-width: 64em) {
-      font-size: var(--fontxxl);
-      padding: 0;
+      font-size: 1rem;
     }
     @media screen and (max-width: 48em) {
-      font-size: var(--fontxl);
+      font-size: 1rem;
     }
   }
 
@@ -74,7 +75,7 @@ const TextContainer = styled.div`
     }
 
     height: 80vh;
-    padding: 0 1rem;
+    padding: 0.5rem;
   }
 `;
 
@@ -101,10 +102,16 @@ const HeroSection = () => {
       <VideoContainer>
         <video src={backgroundVideo} type="video/mp4" autoPlay muted loop />
       </VideoContainer>
-      <Title>iPhone 14 Pro Max</Title>
+      <Title>C0N3C7</Title>
       <TextContainer>
-        <span>So.Cold.</span>
-        <span>So.Bold.</span>
+        <AnimationTitles
+          title="Musician"
+          className="animation-title-hero"
+        />
+        <AnimationTitles
+          title="Producer"
+          className="animation-title-hero"
+        />
       </TextContainer>
     </Section>
   );
