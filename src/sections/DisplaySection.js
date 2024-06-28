@@ -54,8 +54,9 @@ const MainTitle = styled.h1`
   @media screen and (max-width: 48em) {
     font-size: var(--fontxl);
   }
-  @media screen and (max-width: 40em) {
+  @media screen and (max-width: 300px) {
     font-size: var(--fontlg);
+    padding: 2rem;
   }
 `;
 
@@ -66,9 +67,12 @@ const TextBlockRight = styled.div`
   width: 90%;
   margin-bottom: 1rem; /* Reduced margin bottom */
 
-  @media screen and (max-width: 48em) {
+  @media screen and (max-width: 300px) {
     width: 85%;
-    padding: 5rem;
+    background: red;
+    align-items: center;
+    padding: 0rem;
+    transform: translateX(-50px);
   }
 `;
 const TextBlockLeft = styled.div`
@@ -78,9 +82,11 @@ const TextBlockLeft = styled.div`
   width: 50%;
   margin-bottom: 1rem; /* Reduced margin bottom */
 
-  @media screen and (max-width: 48em) {
+  @media screen and (max-width: 300px) {
     width: 85%;
-    padding: 5rem;
+    padding: 1rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
   }
 `;
 
@@ -172,7 +178,7 @@ const DisplaySection = () => {
     <Section>
         <motion.div
           initial={{ x: -300 }}
-          whileInView={{ x: 100 }}
+          whileInView={{ x: 0 }}
           transition={{ duration: 0.8 }}
         >
           <MainTitle>

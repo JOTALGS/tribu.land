@@ -10,7 +10,7 @@ import ProcessSection from "./sections/ProcessSection";
 
 function App() {
   return (
-    <>
+    <section>
       <GlobalStyle />
       <Quote />
       <HeroSection />
@@ -20,7 +20,7 @@ function App() {
       <JoinSection />
       {/* <FooterSection /> */}
 
-    </>
+    </section>
   );
 }
 

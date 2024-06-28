@@ -4,6 +4,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import React, { useRef } from "react";
 import styled, { keyframes } from "styled-components";
 import initialVideo from "../assets/video/tribu.mp4";
+import LogoImage from "../assets/Images/logo.png";
 
 const Section = styled.section`
   width: 100vw;
@@ -19,7 +20,7 @@ const VideoContainer = styled.div`
   min-height: 100vh;
 
   position: absolute;
-  top: 0;
+  top: 100;
   left: 0;
   z-index: 0;
 
@@ -27,7 +28,7 @@ const VideoContainer = styled.div`
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    object-position: bottom;
+    object-position: center;
   }
 `;
 
@@ -72,6 +73,11 @@ const Text = styled.p`
     font-size: 2em;
   }
 
+  @media screen and (max-width: 95em) {
+    font-size: 2rem;
+    height: 200px;
+  }
+
   @media screen and (max-width: 48em) {
     font-size: 1rem;
     height: 200px;
@@ -84,6 +90,12 @@ const LogoContainer = styled.div`
   height: 400px;
   top: 15%; /* Sube la posición del logo para dar espacio al texto */
   left: 5%;
+`;
+
+const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 `;
 
 const Quote = () => {
@@ -111,7 +123,7 @@ const Quote = () => {
         <video src={initialVideo} type="video/mp4" autoPlay muted loop />
       </VideoContainer>
       <LogoContainer>
-        <image src="/images/logo.png" alt="Logo" layout="fill" objectFit="contain" />
+        <Image src={LogoImage} alt="Logo"/>
       </LogoContainer>
       <TextContainer>
         <Text delay="0s">

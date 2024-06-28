@@ -36,7 +36,7 @@ const TextContainer = styled.p`
     text-transform: capitalize;
   }
 
-  @media screen and (max-width: 70em) {
+  @media screen and (max-width: 95em) {
     span {
       font-size: var(--fontxxxl);
     }
@@ -71,7 +71,7 @@ const TextContainer2 = styled.p`
     text-align: right;
   }
 
-  @media screen and (max-width: 70em) {
+  @media screen and (max-width: 95em) {
     span {
       font-size: var(--fontxxl);
     }

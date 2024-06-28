@@ -5,7 +5,7 @@ import AnimationTitles from "../components/functions/AnimationTitles";
 
 const Section = styled.section`
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -14,7 +14,7 @@ const Section = styled.section`
   color: var(--white);
   overflow: hidden;
   @media screen and (max-width: 48em) {
-    height: 200vh;
+    height: 100%;
   }
 `;
 
@@ -56,12 +56,14 @@ const Features = styled.div`
   @media screen and (max-width: 64em) {
     width: 100%;
   }
-  @media screen and (max-width: 48em) {
+  @media screen and (max-width: 300px) {
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 0.5rem;
     margin: 2rem;
+    padding-top: 400px;
+    margin-bottom: 400px;
   }
 }
 `;

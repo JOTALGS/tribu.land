@@ -59,8 +59,10 @@ const TextContainer = styled.div`
     @media screen and (max-width: 64em) {
       font-size: 1rem;
     }
-    @media screen and (max-width: 48em) {
+    @media screen and (max-width: 20em) {
       font-size: 1rem;
+      object-fit: contain;
+      padding: 0.5rem;
     }
   }
 
