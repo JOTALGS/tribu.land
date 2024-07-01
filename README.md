@@ -1,4 +1,4 @@
-![Logo](frontend/public/images/logo.png)
+![Logo](./logo.png)
 
 # TRIBU
 Tribu is a tool directed to workers in the music industry with a special emphasis on promoting productivity through the generation of connections and collaboration between music industry members.
